@@ -1,0 +1,68 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 500px 200px;
+    grid-template-areas: "navbar navbar navbar"
+                         "content content content"
+                         "footer footer footer";
+}
+
+.navbar{
+    background-color: whitesmoke;
+    grid-area: navbar;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar > h1{
+    font-size:20px;
+    align-self:center;
+    margin: 0px 0px 0px 70px;
+}
+
+.navbar > h1 span{
+    color: rgb(212, 138, 0);
+    align-self: center;
+}
+
+.navbar > ul{
+    display: inline-block;
+    text-decoration: none;
+    justify-items: space-between;
+    justify-self:end;
+    align-self: center;
+    padding: 10px;
+    margin: 0px auto 0px auto;
+}
+
+.navbar > ul li {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0px 15px 0px 15px;
+}
+
+.navbar > ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover{
+    color: rgb(0, 0, 120);
+    text-decoration: underline;
+}
+
+
+.content{
+    background-color: green;
+    grid-area: content;
+}
+.footer{
+    background-color: blue;
+    grid-area: footer;
+}
