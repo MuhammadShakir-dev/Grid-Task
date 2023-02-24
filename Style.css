@@ -84,7 +84,7 @@ ul li a:hover {
     color: rgb(0, 0, 120);
 }
 
-.box-1 i {
+.box-1 .italic {
     font-size: 18px;
     word-spacing: 1px;
     color: rgb(212, 138, 0);
@@ -108,6 +108,11 @@ ul li a:hover {
     cursor: pointer;
 }
 
+button > a{
+    text-decoration: none;
+    color: white;
+}
+
 .box-2 {
     width: 500px;
     display: grid;
@@ -123,7 +128,6 @@ ul li a:hover {
     justify-self: end;
     margin-right: 80px;
     border: 10px solid lightgrey;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     grid-column: 1 / span 2;
     grid-row: 1 / spna 2;
 }
@@ -170,6 +174,97 @@ ul li a:hover {
 }
 
 .footer {
-    background-color: blue;
+    width: 100%;
+    background-color: whitesmoke;
     grid-area: footer;
+}
+
+.footer h1 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 120);
+
+}
+
+.icons {
+    width: 650px;
+    margin: 0px auto 0px auto;
+}
+
+.fa-html5 {
+    color: grey;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.fa-html5:hover {
+    color: rgb(212, 138, 0);
+    cursor: pointer;
+}
+
+
+.fa-css3-alt {
+    color: grey;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.fa-css3-alt:hover {
+    color: rgb(212, 138, 0);
+    cursor: pointer;
+}
+
+.fa-js {
+    color: grey;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.fa-js:hover {
+    color: rgb(212, 138, 0);
+    cursor: pointer;
+}
+
+.fa-bootstrap {
+    color: grey;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.fa-bootstrap:hover {
+    color: rgb(212, 138, 0);
+    cursor: pointer;
+}
+
+.fa-github {
+    color: grey;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.fa-github:hover {
+    color: rgb(212, 138, 0);
+    cursor: pointer;
+}
+
+.fa-linux {
+    color: grey;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.fa-linux:hover {
+    color: rgb(212, 138, 0);
+    cursor: pointer;
+}
+
+.fa-figma {
+    color: grey;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.fa-figma:hover {
+    color: rgb(212, 138, 0);
+    cursor: pointer;
 }
