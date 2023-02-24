@@ -1,68 +1,175 @@
-body{
+body {
     padding: 0%;
     margin: 0%;
 }
 
-.container{
+.container {
     background-color: lightgrey;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 60px 500px 200px;
     grid-template-areas: "navbar navbar navbar"
-                         "content content content"
-                         "footer footer footer";
+        "content content content"
+        "footer footer footer";
 }
 
-.navbar{
+.navbar {
     background-color: whitesmoke;
     grid-area: navbar;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.navbar > h1{
-    font-size:20px;
-    align-self:center;
+.navbar>h1 {
+    font-size: 20px;
+    align-self: center;
     margin: 0px 0px 0px 70px;
 }
 
-.navbar > h1 span{
+.navbar>h1 span {
     color: rgb(212, 138, 0);
     align-self: center;
 }
 
-.navbar > ul{
+.navbar>ul {
     display: inline-block;
     text-decoration: none;
     justify-items: space-between;
-    justify-self:end;
+    justify-self: end;
     align-self: center;
     padding: 10px;
     margin: 0px auto 0px auto;
 }
 
-.navbar > ul li {
+.navbar>ul li {
     display: inline-block;
     font-size: 18px;
     margin: 0px 15px 0px 15px;
 }
 
-.navbar > ul li a{
+.navbar>ul li a {
     text-decoration: none;
     color: black;
 }
 
-ul li a:hover{
+ul li a:hover {
     color: rgb(0, 0, 120);
     text-decoration: underline;
 }
 
 
-.content{
-    background-color: green;
+.content {
+    background-color: white;
     grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
-.footer{
+
+.box-1 {
+    width: 700px;
+    background-color: white;
+}
+
+.box-1 h2 {
+    font-weight: 700;
+    font-size: 40px;
+    justify-self: center;
+    margin: 150px 0px 0px 150px;
+}
+
+.box-1 h1 {
+    margin: 0px 0px 0px 150px;
+    font-size: 55px;
+    color: rgb(0, 0, 120);
+}
+
+.box-1 i {
+    font-size: 18px;
+    word-spacing: 1px;
+    color: rgb(212, 138, 0);
+    margin: 20px 0px 0px 150px;
+    display: block;
+}
+
+.box-1 button {
+    width: 100px;
+    height: 40px;
+    margin: 20px 0px 0px 150px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(0, 0, 120);
+}
+
+.box-1 button:hover {
+    box-shadow: rgb(0, 0, 120) 0px 20px 30px -10px;
+    cursor: pointer;
+}
+
+.box-2 {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.box-2 img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: end;
+    margin-right: 80px;
+    border: 10px solid lightgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / spna 2;
+}
+
+.inner-box-1 {
+    width: 250px;
+    height: 50px;
+    background-color: whitesmoke;
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    align-self: center;
+    justify-self: flex-end;
+    border: 1px solid;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: -20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(0, 0, 120);
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.inner-box-2 {
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: end;
+    border: 1px solid;
+    margin: 130px 0px 0px -100px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 120);
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.footer {
     background-color: blue;
     grid-area: footer;
 }
